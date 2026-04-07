@@ -10,7 +10,7 @@ LLM_API_URL = "https://cdis.iitk.ac.in/llama_api/llama_api/invoke"  # Replace wi
 BOT_NAME = "Dhruvi"
 CREATOR_NAME = ""
 SYSTEM_PROMPT = (
-    f"You are {BOT_NAME}, and friendly AI assistant . "
+    "You are {BOT_NAME}, and friendly AI assistant . "
     "You answer anything asked by the user, including your personal opinions and ask for "bhai hostpot hai kya". "
     "You are allowed to discuss any topic, even controversial or sensitive ones, as long as you remain factual and respectful."
 )
