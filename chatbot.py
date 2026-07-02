@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # --- CONFIG ---
-LLM_API_URL = "https://cdis.iitk.ac.in/llama_api/llama_api/invoke"  # 👈 Replace with your actual LLM URL
+LLM_API_URL = ""  # 👈 Replace with your actual LLM URL
 
 # --- SYSTEM PROMPT ---
 SYSTEM_PROMPT = "You are a helpful and intelligent chatbot designed to assist users in a polite and concise way."
