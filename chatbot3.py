@@ -6,7 +6,7 @@ import uuid
 import os
 
 # --- CONFIGURATION ---
-LLM_API_URL = "https://cdis.iitk.ac.in/llama_api/llama_api/invoke"  # Replace with your actual LLM endpoint
+LLM_API_URL = ""  # Replace with your actual LLM endpoint
 BOT_NAME = "Dhruvi"
 CREATOR_NAME = ""
 SYSTEM_PROMPT = (
