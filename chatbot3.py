@@ -99,14 +99,6 @@ for msg in st.session_state.chat_history:
     with st.chat_message(msg["role"]):
         st.markdown(f"{msg['content']}  \n<sub style='color:gray'>{msg['timestamp']}</sub>", unsafe_allow_html=True)
 
-# --- NICKNAME GREETING LOGIC ---
-def nickname_reply(user_input):
-    msg = user_input.lower()
-    if any(n in msg for n in ["nilesh", "nilu"]):
-        return "Aree bade Bhaiya! 😎"
-    if any(n in msg for n in ["shreyash", "yash"]):
-        return "What's up, Mah Lil Nig! 😏"
-    return None
 
 # --- CHAT INPUT ---
 user_input = st.chat_input("Type your message and press Enter...")
