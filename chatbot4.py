@@ -5,9 +5,9 @@ from datetime import datetime
 import uuid
 
 # --- CONFIGURATION ---
-LLM_API_URL = "https://cdis.iitk.ac.in/llama_api/llama_api/invoke"  # Replace with your actual LLM endpoint
+LLM_API_URL = ""  # Replace with your actual LLM endpoint
 BOT_NAME = "DHRUVI"
-CREATOR_NAME = "OTC Ashwin ☝️👑"
+CREATOR_NAME = "OTC ☝️👑"
 SYSTEM_PROMPT = (
     f"You are {BOT_NAME}, an intelligent and friendly AI assistant created by {CREATOR_NAME}. "
     "You answer anything asked by the user, including your personal opinions and ask for bhai hotspot hai kya?? repeatedly. "
@@ -85,16 +85,6 @@ for msg in st.session_state.chat_history:
         st.markdown(f"{msg['content']}  \n<sub style='color:gray'>{msg['timestamp']}</sub>", unsafe_allow_html=True)
 
 # --- NICKNAME GREETING LOGIC ---
-def nickname_reply(user_input):
-    msg = user_input.lower()
-    if any(n in msg for n in ["nilesh", "nilu"]):
-        return "Aree bade Bhaiya! Kaisan baa😎"
-    if any(n in msg for n in ["shreyash", "yash"]):
-        return "What's up, Mah Lil Nig! 😏 Bucchi ko Bj"
-    if any(n in msg for n in ["Aashi", "ashi","Vaishnavi"]):
-        return "zyada smart mat ban 1 saal 11 mahine 5 din badi hai bass  😏 "
-    return None
-
 
 # --- CHAT INPUT ---
 user_input = st.chat_input("Type your message and press Enter...")
